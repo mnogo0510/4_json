@@ -31,10 +31,8 @@ def createParser (params):
 
     parser.add_argument('-f', '--file', type=argparse.FileType())
 
-
-
-
     return parser.parse_args(params)
+
 
 def load_data(filepath):
     jsObj = open(filepath, "r")
