@@ -1,6 +1,6 @@
 # Prettify JSON
 
-pprint_json.py allows to output content of json file to a console in "pretty" form
+pprint_json.py allows to output a content of json file to a console in "pretty" form
 
 # Quickstart
 
@@ -10,8 +10,8 @@ import pprint_json.py
 ```
 
 pprint_json.py contains two functions:
-load_data(filepath) - for loading text file with json content, deserialize file to Python-object, returns Python-object
-pretty_print_json(data) - for "pretty" print content into console
+<li>load_data(filepath) - for loading text file with json content, deserialize file to Python-object, returns Python-object
+<li>pretty_print_json(data) - for "pretty" print content into console
 
 For "pretty" printing a content of file with json content you should invoke at first: load_data(filepath), then invoke pretty_print_json(data) where the data is a result of invokation of function load_data(filepath)
 
