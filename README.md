@@ -4,7 +4,7 @@ pprint_json.py allows to output a content of json file to a console in "pretty" 
 
 # Quickstart
 
-You can import quadratic_eqation module into your script by:
+You can import pprint_json.py module into your script by:
 ```#!bash
 import pprint_json.py
 ```
