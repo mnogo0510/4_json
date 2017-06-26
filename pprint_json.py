@@ -5,7 +5,7 @@ import argparse
 
 version = "1.0.0"
 
-def createParser (params):
+def create_parser (params):
 
     if not params:
         params = ['-h']
@@ -35,9 +35,9 @@ def createParser (params):
 
 
 def load_data(filepath):
-    jsObj = open(filepath, "r")
-    pObj = json.load(jsObj)
-    return pObj
+    js_obj = open(filepath, "r")
+    p_obj = json.load(js_obj)
+    return p_obj
 
 
 def pretty_print_json(data):
@@ -45,11 +45,11 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-    parserCommandLine = createParser(sys.argv[1:])
+    parser_command_line = create_parser(sys.argv[1:])
     
-    if parserCommandLine.file:
-        pObj = load_data(parserCommandLine.file.name)
-        pretty_print_json(pObj)
+    if parser_command_line.file:
+        p_obj = load_data(parser_command_line.file.name)
+        pretty_print_json(p_obj)
 
 
 
