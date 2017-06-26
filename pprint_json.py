@@ -18,8 +18,6 @@ def createParser (params):
             add_help=False
             )
 
-    parser.add_argument('TEST', help='Positional parameter')
-
     parent_group = parser.add_argument_group (title='Paramaters')
 
     parent_group.add_argument('--help', '-h', action='help', help='Help')
@@ -50,8 +48,7 @@ def pretty_print_json(data):
 
 if __name__ == '__main__':
     parserCommandLine = createParser(sys.argv[1:])
-
-    print(parserCommandLine.TEST)
+    
     if parserCommandLine.file:
         pObj = load_data(parserCommandLine.file.name)
         pretty_print_json(pObj)
